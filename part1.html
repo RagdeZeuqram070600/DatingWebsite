@@ -1,10 +1,135 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <title>Desperate enim caritas</title>
+
 </head>
+
 <body>
 
+<h1>Desperate enim caritas</h1>
+
+<fieldset>
+
+    <legend>Your Face</legend>
+
+    <label for="avatar">Your Image:</label>
+    <input type="file" id="avatar" name="avatar">
+
+    <br>
+
+    <label for="preview">Image Preview:</label>
+    <img id="preview">
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Your general details</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br>
+
+    <label for="gender1">Gender:</label>
+    <input type="radio" id="gender1" name="gender1" required>
+    <label id="male" name="male">Male</label>
+
+    <input type="radio" id="gender2" name="gender2" required>
+    <label id="female" name="female">Female</label>
+
+    <br>
+
+    <label for="mature">Age:</label>
+    <input type="number" id="mature" name="mature" required>
+
+    <br>
+
+    <label for="born">Date of Birth:</label>
+    <input type="date" id="born" name="born">
+
+    <br>
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+
+    <br>
+
+    <label for="mother">Which Country:</label>
+    <select id="mother" name="mother">
+
+        <option>No Selection</option>
+
+        <option>United States</option>
+
+        <option>Canada</option>
+
+        <option>Mexico</option>
+
+        <option>Brazil</option>
+
+        <option>Argentina</option>
+
+    </select>
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Your Indicator</legend>
+
+    <label for="short">Height: Short</label>
+    <input type="range" id="short" min="0" max="100">
+    <label id="tall">Tall</label>
+
+    <br>
+
+    <label for="broke">Salary: Poor</label>
+    <input type="range" id="broke" min="0" max="100">
+    <label id="piling">Rich</label>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Your Contact Information</legend>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <label for="phone">Mobile:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <br>
+
+    <label for="street">Address</label>
+    <textarea id="street"> </textarea>
+
+    <br>
+
+    <label id="connect">Method to contact you:</label>
+
+    <label for="check1">Email</label>
+    <input type="checkbox" id="check1" name="check1">
+
+    <label for="check2">Whatsapp</label>
+    <input type="checkbox" id="check2" name="check2">
+
+    <label for="check3">In-app chat</label>
+    <input type="checkbox" id="check3" name="check3">
+
+</fieldset>
+
+<input type="submit">
+
 </body>
+
 </html>
