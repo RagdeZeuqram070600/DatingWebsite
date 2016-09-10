@@ -10,12 +10,44 @@
 
 </head>
 
+<style>
+
+    fieldset {
+        background: lightyellow;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+
+    }
+
+    label {
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+    }
+    
+   .radio {
+       width: auto;
+   }
+
+    textarea {
+        width: 360px;
+        height: 50px;
+    }
+
+    .range {
+        text-align: center;
+    }
+
+
+</style>
+
 <body>
 
 <h1>Desperate enim caritas</h1>
 
 <fieldset>
-
     <legend>Your Face</legend>
 
     <label for="avatar">Your Image:</label>
@@ -37,12 +69,12 @@
 
     <br>
 
-    <label for="gender1">Gender:</label>
-    <input type="radio" id="gender1" name="gender1" required>
-    <label id="male" name="male">Male</label>
+    <label class="radio" for="gender1">Gender:</label>
+    <input class="radio" type="radio" id="gender1" name="gender1" required>
+    <label class="radio" id="male" name="male">Male</label>
 
     <input type="radio" id="gender2" name="gender2" required>
-    <label id="female" name="female">Female</label>
+    <label class="radio" id="female" name="female">Female</label>
 
     <br>
 
@@ -65,20 +97,17 @@
     <select id="mother" name="mother">
 
         <option>No Selection</option>
-
         <option>United States</option>
-
         <option>Canada</option>
-
         <option>Mexico</option>
-
         <option>Brazil</option>
-
         <option>Argentina</option>
 
     </select>
 
 </fieldset>
+
+
 
 <fieldset>
 
@@ -92,9 +121,10 @@
 
     <label for="broke">Salary: Poor</label>
     <input type="range" id="broke" min="0" max="100">
-    <label id="piling">Rich</label>
+    <label class="range" id="piling">Rich</label>
 
 </fieldset>
+
 
 <fieldset>
 
@@ -110,20 +140,20 @@
 
     <br>
 
-    <label for="street">Address</label>
+    <label for="street">Address:</label>
     <textarea id="street"> </textarea>
 
     <br>
 
-    <label id="connect">Method to contact you:</label>
+    <label class="radio" id="connect">Method to contact you:</label>
 
-    <label for="check1">Email</label>
+    <label class="radio" for="check1">Email</label>
     <input type="checkbox" id="check1" name="check1">
 
-    <label for="check2">Whatsapp</label>
+    <label class="radio" for="check2">Whatsapp</label>
     <input type="checkbox" id="check2" name="check2">
 
-    <label for="check3">In-app chat</label>
+    <label class="radio" for="check3">In-app chat</label>
     <input type="checkbox" id="check3" name="check3">
 
 </fieldset>
